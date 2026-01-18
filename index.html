@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Mas de Flory - Gîtes en Dordogne</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .font-serif {
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 shadow-lg" style="background-color: #E8F0EA;">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-serif text-stone-800">Le Mas de Flory</div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-stone-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <div class="hidden md:flex gap-8 items-center">
+                    <a href="#home" class="text-sm tracking-wide text-stone-800 font-medium hover:text-stone-600">HOME</a>
+                    <a href="#about" class="text-sm tracking-wide text-stone-600 hover:text-stone-800">À PROPOS</a>
+                    <a href="#gites" class="text-sm tracking-wide text-stone-600 hover:text-stone-800">GÎTES</a>
+                    <a href="#gallery" class="text-sm tracking-wide text-stone-600 hover:text-stone-800">GALERIE</a>
+                    <a href="#contact" class="text-sm tracking-wide text-stone-600 hover:text-stone-800">CONTACT</a>
+                    <a href="#contact" class="bg-stone-800 text-white text-sm tracking-wide font-medium px-6 py-2 hover:bg-stone-700">RÉSERVER</a>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 flex-col gap-3 pb-4">
+                <a href="#home" class="text-left text-stone-600 hover:text-stone-800">Home</a>
+                <a href="#about" class="text-left text-stone-600 hover:text-stone-800">À Propos</a>
+                <a href="#gites" class="text-left text-stone-600 hover:text-stone-800">Gîtes</a>
+                <a href="#gallery" class="text-left text-stone-600 hover:text-stone-800">Galerie</a>
+                <a href="#contact" class="text-left text-stone-600 hover:text-stone-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center" style="background-color: #E8F0EA;">
+        <div class="text-center px-4 max-w-4xl">
+            <h1 class="text-6xl md:text-7xl font-serif text-stone-800 mb-6 leading-tight">Le Mas de Flory</h1>
+            <p class="text-stone-700 text-xl mb-8 font-light">Gîtes en pleine campagne lotoise</p>
+            <a href="#gites" class="inline-block bg-stone-800 text-white px-10 py-4 text-sm tracking-widest font-medium hover:bg-stone-700">
+                DÉCOUVRIR NOS GÎTES
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-white py-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <p class="text-sm tracking-widest mb-3 font-medium text-stone-600">ABOUT</p>
+            <h2 class="text-4xl font-serif text-stone-800 mb-8">À Propos</h2>
+            <p class="text-stone-600 text-lg leading-relaxed max-w-3xl mx-auto">
+                Découvrez le Mas de Flory! Cette ancienne ferme traditionnelle reconvertie en maison familiale et gîtes, située en pleine campagne lotoise, entre champs et forêts, vous assure des vacances reposantes et excitantes à la fois.
+            </p>
+        </div>
+    </section>
+
+    <!-- Gîtes Section -->
+    <section id="gites" class="py-20" style="background-color: #E8F0EA;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-widest mb-3 font-medium text-stone-600">ROOMS</p>
+                <h2 class="text-4xl font-serif text-stone-800 mb-4">Nos Gîtes</h2>
+                <p class="text-stone-600">Le Mas de Flory se compose de deux gîtes pouvant accueillir respectivement jusqu'à 4 et 10 personnes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-80 flex items-center justify-center" style="background-color: #E8F0EA;">
+                        <div class="text-center">
+                            <svg class="mx-auto mb-2 text-stone-600" width="64" height="64" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span class="text-stone-700">Photo Gîte 4 pers</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif mb-2 text-stone-800">Gîte 4 personnes</h3>
+                        <p class="text-stone-600 mb-4">Petit gîte cosy pour 2-4 personnes</p>
+                        <a href="#gites" class="font-medium text-stone-800 hover:text-stone-600">Découvrir →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-80 flex items-center justify-center" style="background-color: #E8F0EA;">
+                        <div class="text-center">
+                            <svg class="mx-auto mb-2 text-stone-600" width="64" height="64" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span class="text-stone-700">Photo Gîte 10 pers</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif mb-2 text-stone-800">Gîte 10 personnes</h3>
+                        <p class="text-stone-600 mb-4">Grand gîte familial jusqu'à 10 personnes</p>
+                        <a href="#gites" class="font-medium text-stone-800 hover:text-stone-600">Découvrir →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-widest mb-3 font-medium text-stone-600">OUR SERVICES</p>
+                <h2 class="text-4xl font-serif text-stone-800 mb-8">Nos Services</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #E8F0EA;">
+                        <svg class="text-stone-700" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 17H3a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2z"></path>
+                            <path d="M19 17h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2z"></path>
+                            <path d="M7 12h10l1.5 5H5.5L7 12z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-stone-800">Parking</h3>
+                    <p class="text-sm text-stone-600">Un parking est à votre disposition</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #E8F0EA;">
+                        <svg class="text-stone-700" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-stone-800">Jardin</h3>
+                    <p class="text-sm text-stone-600">Grand jardin entouré de nature</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #E8F0EA;">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#57534E" stroke-width="2">
+                            <ellipse cx="12" cy="12" rx="10" ry="6"/>
+                            <path d="M2 12c0-3.3 4.5-6 10-6s10 2.7 10 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-stone-800">Piscine</h3>
+                    <p class="text-sm text-stone-600">Piscine disponible (10 pers)</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: #E8F0EA;">
+                        <svg class="text-stone-700" width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 12.55a11.2 11.2 0 0 1 14 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-stone-800">Wi-Fi</h3>
+                    <p class="text-sm text-stone-600">Wi-Fi dans les deux gîtes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20" style="background-color: #E8F0EA;">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="text-6xl text-stone-400 mb-6">"</div>
+            <p class="text-xl italic text-stone-800 mb-6 leading-relaxed">
+                Merci beaucoup pour ce magnifique séjour. Nous avons adoré la maison, la région!... Très bien équipé et agréable. Et merci pour votre gentillesse!
+            </p>
+            <p class="text-stone-600 text-sm tracking-widest">AVIS CLIENTS</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-sm tracking-widest mb-3 font-medium text-stone-600">CONTACT</p>
+                <h2 class="text-4xl font-serif text-stone-800 mb-4">Contactez-nous</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Envoyez-nous un message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-2">Nom*</label>
+                            <input type="text" class="w-full border border-stone-300 rounded px-4 py-3" placeholder="Votre nom">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-2">Email*</label>
+                            <input type="email" class="w-full border border-stone-300 rounded px-4 py-3" placeholder="votre@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-2">Sujet</label>
+                            <input type="text" class="w-full border border-stone-300 rounded px-4 py-3" placeholder="Sujet">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-stone-700 mb-2">Votre Message</label>
+                            <textarea class="w-full border border-stone-300 rounded px-4 py-3 h-32 resize-none" placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-stone-800 text-white py-4 rounded hover:bg-stone-700 font-medium">
+                            Envoyer
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Informations</h3>
+                    <div class="h-80 rounded-lg mb-8 flex items-center justify-center" style="background-color: #E8F0EA;">
+                        <div class="text-center">
+                            <svg class="text-stone-600 mx-auto mb-2" width="56" height="56" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="text-stone-700">Carte</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6 text-stone-600">
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-2">Tel</h4>
+                            <p>+33 (0)7 85 85 80 29</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-2">Email</h4>
+                            <p>lemasdeflory@gmail.com</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-2">Adresse</h4>
+                            <p>Mas de Flory<br>46340 Dégagnac</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-stone-300 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-2xl font-serif tracking-wider mb-2 text-white">Le Mas de Flory</p>
+            <p class="text-sm text-stone-400 mb-6">Gîtes en Dordogne</p>
+            <p class="text-xs text-stone-500">© 2023 by Le Mas de Flory</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
